@@ -1,20 +1,16 @@
 {% extends 'main/base.html' %}
 
-{% load static %}
-
 {% block title %}
-Projet Bible
+  Recherche
 {% endblock %}
 
 {% block content %}
   <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
     <form method="POST" class="form-inline flex-column">
-      <h1>Projet Bible</h1>
-      <input type="submit" class="btn btn-secondary mt-2" value="Je me sens béni" >
+      <div class="d-flex">
+        <input type="text" name="search" class="form-control mr-sm-2" placeholder="Écrivez ici">
+        <input type="submit" class="btn btn-primary" value="Recherce">
+      </div>
     </form>
   </div>
-{% endblock %}
-
-{% block extra_css %}
-  <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
 {% endblock %}
