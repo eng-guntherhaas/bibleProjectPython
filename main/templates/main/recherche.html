@@ -1,16 +1,16 @@
 {% extends 'main/base.html' %}
 
 {% block title %}
-  Recherche
+Recherche
 {% endblock %}
 
 {% block content %}
-  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <form method="POST" class="form-inline flex-column">
-      <div class="d-flex">
-        <input type="text" name="search" class="form-control mr-sm-2" placeholder="Écrivez ici">
-        <input type="submit" class="btn btn-primary" value="Recherce">
-      </div>
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <form class="form-inline flex-column" method="POST">
+        <div class="d-flex">
+            <input class="form-control mr-sm-2" name="search" placeholder="Écrivez ici" type="text">
+            <input class="btn btn-primary" type="submit" value="Recherce">
+        </div>
     </form>
-  </div>
+</div>
 {% endblock %}

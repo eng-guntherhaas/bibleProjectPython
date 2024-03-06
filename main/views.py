@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
-from . forms import CreateUserForm
+
+from .forms import CreateUserForm
+
 
 def homepage(request):
-
     return render(request, 'main/index.html')
 
 
@@ -19,15 +20,12 @@ def registre(request):
 
 
 def my_login(request):
-
     return render(request, 'main/my-login.html')
 
 
 def day_lecture(request):
-
     return render(request, 'main/day-lecture.html')
 
 
 def recherche(request):
-
     return render(request, 'main/recherche.html')

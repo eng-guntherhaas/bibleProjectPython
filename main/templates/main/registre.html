@@ -1,14 +1,14 @@
 {% extends 'main/base.html' %}
 
 {% block extra_head %}
-<link rel="stylesheet" type="text/css" href="../../static/styles/register.css">
+<link href="../../static/styles/register.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
 
 {% block content %}
-  <form method="POST" autocomplete="off">
+<form autocomplete="off" method="POST">
     {% csrf_token %}
     {{registerform.as_p}}
-    <input type="submit" class="btn btn-primary" value="Registre">
-  </form>
+    <input class="btn btn-primary" type="submit" value="Registre">
+</form>
 {% endblock %}
