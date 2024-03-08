@@ -177,12 +177,6 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_EXTRA_DATA = [
     'last_name',
 ]
 
-SOCIAL_AUTH_FACEBOOK_KEY = getenv('FACEBOOK_KEY')
-SOCIAL_AUTH_FACEBOOK_SECRET = getenv('FACEBOOK_SECRET')
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
-SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    'fields': 'email, first_name, last_name'
-}
 
 CORS_ALLOWED_ORIGINS = (getenv(
     'CORS_ALLOWED_ORIGINS',
@@ -192,7 +186,6 @@ CORS_ALLOW_CREDENTIALS = True
 
 AUTHENTICATION_BACKENDS = [
     'social_core.backends.google.GoogleOAuth2',
-    'social_core.backends.facebook.FacebookOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 ]
 
